@@ -2,13 +2,13 @@ version: '3'
 services:
   # Frontend
   react-app:
-    image: amineis/MIOLAFront:1.0
+    image: amineis/miolafront:1.0
     ports:
       - "3000:3000"
 
   # Backend
   spring-app:
-    image: amineis/MIOLABack:2.3
+    image: amineis/miolaback:2.3
     ports:
       - "8080:8080"
     depends_on:
